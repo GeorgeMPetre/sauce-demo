@@ -1,0 +1,19 @@
+# Mark generated files as linguist-generated, excluding them from language stats
+dist/** linguist-generated=true
+build/** linguist-generated=true
+*.min.js linguist-generated=true
+
+# Treat all .css files as CSS
+*.css linguist-language=CSS
+
+# Treat certain HTML files that are mostly JavaScript as JavaScript
+special/*.html linguist-language=JavaScript
+
+# Exclude markdown files from stats
+*.md linguist-documentation=true
+docs/** linguist-documentation=true
+
+# Ignore binary files in language stats
+*.png linguist-vendored
+*.jpg linguist-vendored
+*.pdf linguist-vendored
